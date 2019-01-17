@@ -1,0 +1,46 @@
+.carousel {
+  position: relative;
+
+  &__content {
+    &.carousel__content{
+      display: flex;
+      margin-bottom: 20px;
+      @include media-640 {
+        display: block;
+      }
+    }
+  }
+
+  &__dots {
+    position: absolute;
+    bottom: 30px;
+    left: 20%;
+    display: inline-flex;
+    z-index: 1;
+    &.m-center {
+      left: 50%;
+      bottom: -10px;
+      transform: translateX(-50%);
+    }
+    &.m-bottom {
+      left: 50%;
+      bottom: -55px;
+      transform: translateX(-50%);
+    }
+    & button {
+      display: block;
+      width: 5px;
+      height: 5px;
+      background: red;
+      border-radius: 50%;
+      padding: 0;
+      border: none;
+      &.active {
+        background: $colorBlack;
+      }
+    }
+    & button + button {
+      margin-left: 10px;
+    }
+  }
+}
