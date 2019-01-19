@@ -1,12 +1,13 @@
-$colorBlack: #333333;
+$colorBlack: #2D2D2D;
 $colorWhite: #FFFFFF;
-$colorPrimary: #FF9400;
+$colorPrimary: #E58A53;
+$colorSecondary: #163C6E;
 $colorGray400: #999999;
 $colorGray500: #CCCCCC;
-$colorGray600: #F6F6F6;
+$colorGray600: #FAFAFA;
 
-$font1: PFDinDisplay, 'Open Sans', 'Helvetica Neue', sans-serif;
-$font2: PFDinMedium, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+$font1: 'Roboto', sans-serif;
 
 @mixin flex($justify: 'space-between', $align: 'center') {
   display: flex;
@@ -36,15 +37,15 @@ $font2: PFDinMedium, 'Open Sans', 'Helvetica Neue', sans-serif;
 @mixin media-1440() { @media all and (max-width: 1440px) { @content; } }
 
 
-@font-face {
-  font-family: 'PFDinDisplay';
-  src: url(../fonts/PFDinDisplay/PFDinDisplay.ttf);
-}
-
-@font-face {
-  font-family: 'PFDinMedium';
-  src: url(../fonts/PFDinMedium/PFDinMedium.ttf);
-}
+//@font-face {
+//  font-family: 'PFDinDisplay';
+//  src: url(../fonts/PFDinDisplay/PFDinDisplay.ttf);
+//}
+//
+//@font-face {
+//  font-family: 'PFDinMedium';
+//  src: url(../fonts/PFDinMedium/PFDinMedium.ttf);
+//}
 
 @import "~normalize.css/normalize.css";
 @import "import/*.scss";

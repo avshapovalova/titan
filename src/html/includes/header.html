@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/js/libs/owl/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="/js/libs/owl/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.bundle.css">
     <!--<script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>-->
     <title>Titan</title>
@@ -14,5 +15,58 @@
 <body>
 <script src="/js/libs/jquery-3.3.1.min.js"></script>
 <header class="header">
-    header
+    <div class="header__search-block js-search-block">
+        <form class="header__search-block-inner container">
+            <input class="header__search-block-input" type="text"/>
+            <button class="header__search-block-submit button">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+    <div class="header__top container">
+        <div class="header__logo">
+            <div class="logo">
+                <img src="/img/titan_logo.png"/>
+            </div>
+        </div>
+        <a class="header__search js-search" href="javascript://">
+            <img src="/img/icon_search.png"/>
+            <span>Поиск</span>
+        </a>
+        <a class="header__feedback" href="">
+            <img src="/img/icon_feedback.png"/>
+            <span>Обратная связь</span>
+        </a>
+        <a class="header__email" href="mailto:te@szte.ru">te@szte.ru</a>
+        <a class="header__phone" href="tel:+78126120551">+7 (812) 612-05-51</a>
+        <div class="header__lang">
+            <a class="header__lang-link m-active" href="">Ru</a>
+            <a class="header__lang-link" href="">En</a>
+        </div>
+        <a class="header__burger js-burger" href="javascript://">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+    <div class="header__divider"></div>
+    <div class="header__menu-shader js-menu-shader"></div>
+    <div class="header__menu container js-menu">
+        <a class="header__menu-close js-menu-close" href="javascript://">&times;</a>
+
+        <a class="header__menu-link m-active" href="">О компании</a>
+        <a class="header__menu-link" href="">Услуги</a>
+        <a class="header__menu-link" href="">Оборудование</a>
+        <a class="header__menu-link" href="">Реализованные проекты</a>
+        <a class="header__menu-link" href="">Новости</a>
+        <a class="header__menu-link" href="">Статьи</a>
+        <a class="header__menu-link" href="">Контакты</a>
+    </div>
+    <div class="header__divider"></div>
+    <div class="header__bc container">
+        <span class="header__bc-item">Главная</span>
+        <a class="header__bc-item" href="">Контакты</a>
+        <a class="header__bc-item" href="">Что-то еще длинное</a>
+    </div>
+    <div class="header__divider"></div>
 </header>
