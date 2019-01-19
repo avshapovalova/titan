@@ -143,21 +143,22 @@
     padding: 0;
     @include media-960 {
       &.m-show {
-        display: block;
+        right: 0;
       }
-      display: none;
       padding-top: 30px;
       flex-direction: column;
       justify-content: flex-start;
       position: fixed;
+      z-index: 1000;
       top: 0;
-      right: 0;
+      right: calc(-100% + 20px);
       bottom: 0;
       width: calc(100% - 20px);
       height: 100vh;
       max-width: 300px;
       background: $colorWhite;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.2s ease-out;
       & + .header__divider {
         display: none;
       }

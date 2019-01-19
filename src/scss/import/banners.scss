@@ -1,0 +1,63 @@
+.banner1 {
+  height: 500px;
+  background: url('/img/banner1.jpg') 50% 50% repeat-y;
+  overflow: hidden;
+  color: $colorWhite;
+  @include media-1200 {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  & > .container {
+    position: relative;
+  }
+  &__block {
+    @include flex();
+    position: absolute;
+    flex-direction: column;
+    @include media-1200 {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+    &.m-block1 {
+      top: 280px;
+      left: 47px;
+    }
+    &.m-block2 {
+      top: 368px;
+      left: 233px;
+    }
+    &.m-block3 {
+      top: 220px;
+      left: 482px;
+    }
+    &.m-block4 {
+      top: 389px;
+      left: 785px;
+    }
+    &.m-block1,
+    &.m-block2,
+    &.m-block3,
+    &.m-block4 {
+      @include media-1200 {
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+  &__value {
+    font-size: 42px;
+    font-weight: 300;
+    opacity: 0;
+    &.m-show {
+      opacity: 1;
+    }
+  }
+  &__label {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.2;
+  }
+}
