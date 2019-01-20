@@ -50,6 +50,7 @@
   &__value {
     font-size: 42px;
     font-weight: 300;
+    line-height: 1.2;
     opacity: 0;
     &.m-show {
       opacity: 1;
@@ -59,5 +60,60 @@
     font-size: 14px;
     text-align: center;
     line-height: 1.2;
+  }
+}
+
+.banner2 {
+  background: url('/img/banner2.jpg') 50% 50%;
+  color: $colorWhite;
+  @include media-960 {
+    padding: 30px 0;
+  }
+  &__inner {
+    position: relative;
+    height: 460px;
+    @include media-960 {
+      height: auto;
+    }
+  }
+  &__left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    @include flex('center', 'flex-start');
+    flex-direction: column;
+    & > p {
+      color: $colorGray500;
+    }
+    padding-left: 30px;
+    padding-right: 80px;
+    @include media-960 {
+      position: relative;
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 100%;
+    }
+    @include media-640 {
+      padding-left: 15px;
+    }
+  }
+  &__right {
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    @include media-960 {
+      display: none;
+    }
+  }
+  &__book {
+    position: absolute;
+    height: 120%;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
   }
 }

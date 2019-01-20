@@ -19,11 +19,12 @@ ul {
   list-style: url('/img/check.png');
   padding-left: 24px;
 }
-.button {
-  @include flex();
-  cursor: pointer;
-  border: none;
-  background: transparent;
+.link {
+  text-decoration: none;
+  color: $colorPrimary;
+  &:hover {
+    color: $colorPrimaryHover
+  }
 }
 .logo {
   width: 85px;

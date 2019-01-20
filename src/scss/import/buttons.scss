@@ -1,0 +1,62 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  text-decoration: none;
+
+  &.m-styled1 {
+    background: $colorPrimary;
+    color: $colorWhite;
+    padding: 20px 40px;
+    margin-left: 19px;
+    margin-right: 19px;
+    position: relative;
+    &::before,
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 19px;
+      height: 100%;
+      background-size: auto 100%;
+    }
+    &::before {
+      left: 0;
+      transform: translate(-100%, 0);
+      background: url("data:image/svg+xml,%0A%3Csvg viewBox='0 0 19 77' version='1.1' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpolygon id='Path' fill='%23f58545' points='0 0 0 58 19 77 19 0'%3E%3C/polygon%3E%3C/svg%3E") no-repeat;
+    }
+    &::after {
+      right: 0;
+      transform: translate(100%, 0);
+      background: url("data:image/svg+xml,%0A%3Csvg viewBox='0 0 19 77' version='1.1' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpolygon id='Path' fill='%23f58545' transform='translate(9.500000, 38.500000) rotate(180.000000) translate(-9.500000, -38.500000) ' points='0 0 0 58 19 77 19 0'%3E%3C/polygon%3E%3C/svg%3E") no-repeat;
+    }
+    &:hover {
+      background-color: $colorPrimaryHover;
+    }
+    &:hover::before {
+      background: url("data:image/svg+xml,%0A%3Csvg viewBox='0 0 19 77' version='1.1' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpolygon id='Path' fill='%23da6d45' points='0 0 0 58 19 77 19 0'%3E%3C/polygon%3E%3C/svg%3E") no-repeat;
+    }
+    &:hover::after {
+      background: url("data:image/svg+xml,%0A%3Csvg viewBox='0 0 19 77' version='1.1' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpolygon id='Path' fill='%23da6d45' transform='translate(9.500000, 38.500000) rotate(180.000000) translate(-9.500000, -38.500000) ' points='0 0 0 58 19 77 19 0'%3E%3C/polygon%3E%3C/svg%3E") no-repeat;
+    }
+  }
+
+  &__download {
+    @include flex();
+    text-align: left;
+  }
+  &__download-text {
+    margin-left: 10px;
+    font-size: 14px;
+    & b {
+      font-size: 16px;
+    }
+    & > div + div {
+      margin-top: 3px;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-<%= _.template(require('./../includes/header.html'))() %>
+<%= _.template(require('./../includes/header.html'))({ bc: false }) %>
 <%= _.template(require('./../includes/svg.html'))() %>
 
 <div class="page">
@@ -76,11 +76,65 @@
             </div>
         </div>
     </div>
+
+    <%= _.template(require('./../includes/banner2.html'))() %>
+
+    <div class="main2 container js-main2">
+        <h2 class="h1">Реализованные проекты</h2>
+        <div class="main2__inner">
+            <div class="main2__list">
+                <div class="main2__item js-item">
+                    <div class="main2__item-title">Подстанция 110/10 кВ №347</div>
+                    <div class="main2__item-text">ПАО «Ленэнерго»</div>
+                    <a class="main2__item-link" href="">Подробнее</a>
+                    <div class="main2__item-data js-img">/uploads/main2_img1.jpg</div>
+                    <div class="main2__item-data js-text">1 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+                </div>
+                <div class="main2__item js-item">
+                    <div class="main2__item-title">Подстанция 110/10 кВ «Высоцкая»</div>
+                    <div class="main2__item-text">Завод СПГ Криогаз-Высоцк (Новатэк)</div>
+                    <a class="main2__item-link" href="">Подробнее</a>
+                    <div class="main2__item-data js-img">/uploads/main2_img1.jpg</div>
+                    <div class="main2__item-data js-text">2 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+                </div>
+                <div class="main2__item js-item">
+                    <div class="main2__item-title">Подстанция 110/10 №180 «Корнеевская»</div>
+                    <div class="main2__item-text">ПАО «Ленэнерго»</div>
+                    <a class="main2__item-link" href="">Подробнее</a>
+                    <div class="main2__item-data js-img">/uploads/main2_img1.jpg</div>
+                    <div class="main2__item-data js-text">3 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+                </div>
+                <div class="main2__item js-item">
+                    <div class="main2__item-title">Подстанция 110/10 «Магистральная»</div>
+                    <div class="main2__item-text">ПАО «Ленэнерго»</div>
+                    <a class="main2__item-link" href="">Подробнее</a>
+                    <div class="main2__item-data js-img">/uploads/main2_img1.jpg</div>
+                    <div class="main2__item-data js-text">4 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+                </div>
+            </div>
+            <div class="main2__detail">
+                <img class="main2__image js-main2-img" src=""/>
+                <div class="main2__text">
+                    <div class="main2__text-inner js-main2-text"></div>
+                </div>
+            </div>
+        </div>
+        <a class="main2__all button m-styled1" href=""><b>Смотреть все проекты</b></a>
+    </div>
+
+    <div class="main3">
+        <a class="main3__inner" href="">
+            <img class="main3__icon" src="/img/main3_play.png"/>
+            <span>Смотреть видео о компании</span>
+        </a>
+    </div>
+
+    <%= _.template(require('./../includes/news.html'))({ title: 'Новости' }) %>
 </div>
 
 <script type="application/javascript">
     $(document).ready(function(){
-      Main.init()
+      PageMain.init()
     })
 </script>
 

@@ -2,6 +2,7 @@
   background: $colorWhite;
   font-weight: 700;
   color: $colorSecondary;
+  line-height: 1.2;
   @include media-960 {
     font-size: 14px;
   }
