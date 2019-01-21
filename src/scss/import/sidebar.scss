@@ -1,0 +1,26 @@
+.sidebar {
+  background: $colorWhite;
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: $colorBlack;
+    padding: 12px 25px;
+    line-height: 1;
+    border-left: 1px solid $colorGray500;
+    border-right: 1px solid $colorGray500;
+    &:first-child {
+      padding-top: 15px;
+      border-top: 1px solid $colorGray500;
+    }
+    &:last-child {
+      padding-bottom: 15px;
+      border-bottom: 1px solid $colorGray500;
+    }
+    &:hover,
+    &.m-active {
+      color: $colorWhite;
+      background: $colorPrimary;
+      border-color: $colorPrimary;
+    }
+  }
+}

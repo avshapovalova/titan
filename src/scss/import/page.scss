@@ -1,0 +1,27 @@
+.page {
+  background: $colorGray600 url('/img/pattern.png') fixed calc(50% - 8px) 165%;
+  min-height: 500px;
+  &__layout {
+    @include flex('space-between', 'flex-start');
+    padding: 50px 0;
+    @include media-960 {
+      padding: 20px 0;
+      display: block;
+    }
+  }
+  &__left {
+    flex: 0 0 auto;
+    width: 262px;
+    @include media-960 {
+      width: 100%;
+    }
+  }
+  &__right {
+    flex: 1 1 auto;
+    width: 100%;
+    margin-left: 65px;
+    @include media-960 {
+      margin: 20px 0 0;
+    }
+  }
+}

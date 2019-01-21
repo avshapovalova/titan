@@ -1,6 +1,13 @@
-.news {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.articles {
+  &,
+  &.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @include media-768 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   &__heading {
     line-height: 1;
     margin-bottom: 50px;
@@ -54,6 +61,33 @@
     color: $colorGray400;
     font-size: 14px;
     margin-bottom: 10px;
+  }
+  &__item-date {
+    position: relative;
+    &::before {
+      position: relative;
+      top: 1px;
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 12px;
+      background: url('/img/icon_time.png') 50% 50% no-repeat;
+      margin-right: 5px;
+    }
+  }
+  &__item-views {
+    position: relative;
+    margin-left: 20px;
+    &::before {
+      position: relative;
+      top: 1px;
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 12px;
+      background: url('/img/icon_eye.png') 50% 50% no-repeat;
+      margin-right: 5px;
+    }
   }
   &__item-text {
     flex: 1 1 auto;

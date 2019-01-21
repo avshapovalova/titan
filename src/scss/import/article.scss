@@ -1,0 +1,157 @@
+.article {
+  padding: 60px 0 80px;
+  @include media-960 {
+    padding: 30px 0 50px;
+  }
+  & &__image {
+    margin: 0;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+  & > h1,
+  & > h2,
+  & > h3,
+  & > p {
+    margin-left: 190px;
+    margin-right: 190px;
+    @include media-960 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  & > img {
+    margin: 20px 100px;
+    width: calc(100% - 200px);
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    @include media-960 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  & > blockquote {
+    margin: 20px 100px;
+    padding: 90px 190px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid $colorGray500;
+    background: $colorGray600;
+    font-size: 14px;
+    font-style: italic;
+    color: $colorGray400;
+    position: relative;
+    text-align: center;
+    @include media-960 {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 90px 90px 50px;
+    }
+    @include media-640 {
+      padding: 90px 20px 50px;
+    }
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      width: 31px;
+      height: 20px;
+      transform: translateX(-50%);
+      background: url('/img/icon_quote.png') no-repeat;
+    }
+  }
+  &__share {
+    margin-right: 100px;
+    @include media-960 {
+      margin-right: 0;
+    }
+  }
+  &__siblings {
+    @include flex();
+    border-top: 1px solid $colorGray500;
+    margin-top: 80px;
+    padding: 60px 0 45px;
+    @include media-960 {
+      padding: 10px 0 10px;
+      margin-top: 30px;
+    }
+  }
+  &__sibling {
+    width: calc(50% - 15px);
+  }
+  &__sibling-link {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    @include media-960 {
+      font-size: 14px;
+      & span {
+        display: none;
+      }
+    }
+    &.m-prev {
+      text-align: left;
+      &::before {
+        display: inline-block;
+        content: '';
+        background: url('/img/arrow.png');
+        width: 47px;
+        height: 12px;
+        margin-right: 20px;
+      }
+    }
+    &.m-next {
+      text-align: right;
+      &::after {
+        display: inline-block;
+        content: '';
+        background: url('/img/arrow.png');
+        width: 47px;
+        height: 12px;
+        margin-left: 20px;
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__sibling-block {
+    @include flex('space-between', 'stretch');
+    border: 1px solid $colorGray500;
+    background: $colorWhite;
+    line-height: 1.3;
+    @include media-960 {
+      display: none;
+    }
+  }
+  &__sibling-image {
+    display: block;
+    width: 230px;
+    height: 175px;
+    object-fit: cover;
+    object-position: center;
+    border-right: 1px solid $colorGray500;
+  }
+  &__sibling-info {
+    padding: 30px;
+    height: 175px;
+    overflow: hidden;
+    @include media-1200 {
+      padding: 15px;
+      font-size: 14px;
+    }
+  }
+  &__sibling-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &__sibling-text {
+    max-height: 40px;
+    overflow: hidden;
+  }
+}
