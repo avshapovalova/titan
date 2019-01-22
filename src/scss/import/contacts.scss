@@ -1,0 +1,44 @@
+.contacts {
+  @include flex('space-between', 'flex-start');
+  margin-top: 30px;
+  background: $colorWhite;
+  border: 1px solid $colorGray500;
+  padding: 40px;
+  @include media-960 {
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  &__col {
+    flex: 1 1 auto;
+    width: 100%;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    @include media-960 {
+      & + & {
+        margin-top: 20px;
+      }
+    }
+  }
+  &__heading {
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  &__phone {
+    display: block;
+    color: $colorBlack;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  &__email {
+    display: block;
+    color: $colorPrimary;
+    text-decoration: none;
+  }
+  & .button {
+    white-space: nowrap;
+    @include media-960 {
+      padding: 20px 20px;
+    }
+  }
+}

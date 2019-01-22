@@ -45,6 +45,20 @@
     }
   }
 
+  &.m-styled2 {
+    border: 1px solid $colorGray500;
+    color: $colorPrimary;
+    padding: 15px 60px;
+    &:hover {
+      background: $colorPrimary;
+      border-color: $colorPrimary;
+      color: $colorWhite;
+      & img {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
   &__download {
     @include flex();
     text-align: left;

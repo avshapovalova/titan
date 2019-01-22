@@ -1,0 +1,90 @@
+.block1 {
+  @include flex('space-between', 'flex-start');
+  flex-wrap: wrap;
+
+  &.m-stretch {
+    align-items: stretch;
+  }
+  &.m-mt1 {
+    margin-top: 50px;
+    @include media-768 {
+      margin-top: 20px;
+    }
+  }
+  &.m-mt2 { margin-top: 20px; }
+
+  &__item {
+    @include flex('space-between', 'flex-start');
+    width: calc(50% - 15px);
+    @include media-960 {
+      width: 100%;
+      & + & {
+        margin-top: 20px;
+      }
+    }
+    & .button.m-styled2 {
+      padding: 15px 20px;
+    }
+    &.m-blue {
+      padding: 40px;
+      background: $colorSecondary;
+      color: $colorWhite;
+      position: relative;
+    }
+    &.m-corner {
+      &::after {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        bottom: -1px;
+        right: -1px;
+        border-color: transparent;
+        border-style: solid;
+        border-radius: 0;
+        border-width: 15px;
+        border-right-color: $colorGray600;
+        border-bottom-color: $colorGray600;
+      }
+    }
+  }
+  &__info {
+    width: calc(100% - 165px);
+    @include media-960 {
+      width: 100%;
+    }
+  }
+  &__icon {
+    flex: 0 0 auto;
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: $colorWhite;
+    margin-bottom: 15px;
+  }
+  &__text {
+    font-size: 16px;
+    color: $colorSecondaryText;
+  }
+}
+
+.block404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 140px 0 160px;
+  @include media-640 {
+    padding: 40px 0 60px;
+  }
+  &__image {
+    display: block;
+    margin: 0 20px 40px;
+    max-width: 100%;
+  }
+  &__text {
+    font-size: 24px;
+    color: $colorGray300;
+    margin-bottom: 55px;
+  }
+}

@@ -1,0 +1,19 @@
+.download {
+  @include flex();
+  flex-direction: column;
+  padding: 40px;
+  background: $colorWhite;
+  border: 1px solid $colorGray500;
+  @include media-640 {
+    padding: 20px;
+  }
+
+  &__heading {
+    margin-bottom: 20px;
+  }
+  &__link {
+    & + & {
+      margin-top: 15px;
+    }
+  }
+}

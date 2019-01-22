@@ -1,0 +1,35 @@
+<%= _.template(require('./../includes/header.html'))({ bc: true }) %>
+<%= _.template(require('./../includes/svg.html'))() %>
+
+<div class="page">
+    <div class="container page-padding">
+        <h1>Контакты</h1>
+        <div id="map" class="map"></div>
+        <div class="contacts">
+            <div class="contacts__col">
+                <div class="contacts__heading">Адрес</div>
+                <div class="contacts__address">195030, ул. Электропультовцев, дом 7, лит Х</div>
+            </div>
+            <div class="contacts__col">
+                <div class="contacts__heading">Телефон</div>
+                <a class="contacts__phone" href="tel:+78126120551">+7 (812) 612-05-51</a>
+                <a class="contacts__phone" href="tel:+78126120551">Факс: +7 (812) 612-05-51</a>
+            </div>
+            <div class="contacts__col">
+                <div class="contacts__heading">E-mail</div>
+                <a class="contacts__email" href="mailto:te@szte.ru">te@szte.ru</a>
+            </div>
+            <div class="contacts__col">
+                <a class="button m-styled1" href="">Скачать план проезда</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="application/javascript">
+  $(document).ready(function(){
+    PageContacts.init([59.971942, 30.472992])
+  })
+</script>
+
+<%= _.template(require('./../includes/footer.html'))() %>

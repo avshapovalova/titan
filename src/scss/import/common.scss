@@ -19,6 +19,10 @@ ul {
   list-style: url('/img/check.png');
   padding-left: 24px;
 }
+ul.type2 {
+  list-style: url('/img/check2.png');
+  padding-left: 24px;
+}
 .link {
   text-decoration: none;
   color: $colorPrimary;
@@ -50,6 +54,22 @@ ul {
 .center {
   @include flex('center', 'center');
   &.m-more { padding: 0 0 80px 0; }
+}
+.map {
+  background: $colorGray500;
+  height: 350px;
+}
+.page-padding {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  @include media-960 {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  @include media-640 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
 }
 h1,
 .h1 {
