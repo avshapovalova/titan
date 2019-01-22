@@ -1,0 +1,10 @@
+.personal {
+  padding: 30px 100px 50px;
+  @include media-960 {
+    padding: 20px 0 30px;
+  }
+  & ul {
+    list-style: url('/img/check2.png');
+    padding-left: 24px;
+  }
+}

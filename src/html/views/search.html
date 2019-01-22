@@ -1,0 +1,62 @@
+<%= _.template(require('./../includes/header.html'))({ bc: true }) %>
+<%= _.template(require('./../includes/svg.html'))() %>
+
+<div class="page">
+    <div class="container">
+        <div class="search">
+            <div class="search__title">
+                <h1>Результаты поиска</h1>
+                <div class="search__count">Найдено 4 результата</div>
+            </div>
+            <div class="search__item">
+                <div class="search__item-head">
+                    <a class="search__item-title h3" href="">Заголовок статьи</a>
+                    <a class="search__item-category" href="">Статья</a>
+                </div>
+                <a class="search__item-body" href="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                    laoreet. Proin gravida dolor sit amet lacus et viverra justo commodo. Proin sodales
+                    pulvinar tempor.
+                </a>
+            </div>
+
+            <div class="search__item">
+                <div class="search__item-head">
+                    <a class="search__item-title h3" href="">Заголовок</a>
+                    <a class="search__item-category" href="">Оборудование</a>
+                </div>
+                <a class="search__item-body" href="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                    laoreet. Proin gravida dolor sit amet lacus et viverra justo commodo. Proin sodales
+                    pulvinar tempor.
+                </a>
+            </div>
+
+            <div class="search__item">
+                <div class="search__item-head">
+                    <a class="search__item-title h3" href="">Заголовок</a>
+                    <a class="search__item-category" href="">Оборудование</a>
+                </div>
+                <a class="search__item-body" href="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                    laoreet. Proin gravida dolor sit amet lacus et viverra justo commodo. Proin sodales
+                    pulvinar tempor.
+                </a>
+            </div>
+
+            <div class="search__item">
+                <div class="search__item-head">
+                    <a class="search__item-title h3" href="">Заголовок</a>
+                    <a class="search__item-category" href="">Оборудование</a>
+                </div>
+                <a class="search__item-body" href="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                    laoreet. Proin gravida dolor sit amet lacus et viverra justo commodo. Proin sodales
+                    pulvinar tempor.
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))() %>

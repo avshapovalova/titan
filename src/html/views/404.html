@@ -1,0 +1,14 @@
+<%= _.template(require('./../includes/header.html'))({ bc: false }) %>
+<%= _.template(require('./../includes/svg.html'))() %>
+
+<div class="page">
+    <div class="container">
+        <div class="block404">
+            <img class="block404__image" src="/img/404.png"/>
+            <div class="block404__text">Что-то пошло не так.</div>
+            <a class="block404__button button m-styled1" href="/">Вернуться на главную</a>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))() %>

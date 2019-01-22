@@ -1,6 +1,6 @@
 .page {
   background: $colorGray600 url('/img/pattern.png') fixed calc(50% - 8px) 165%;
-  min-height: 500px;
+  min-height: 300px;
   &__layout {
     @include flex('space-between', 'flex-start');
     padding: 50px 0;
