@@ -45,6 +45,7 @@ ul.type2 {
 }
 .container {
   margin: 0 auto;
+  width: 100%;
   max-width: 1200px;
   padding: 0 30px;
   @include media-960 {

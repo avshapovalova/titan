@@ -1,6 +1,9 @@
 .seo {
   padding: 80px 0;
   background: $colorWhite;
+  &.m-gray {
+    background: $colorGray600;
+  }
 
   @include media-768 {
     padding: 40px 0;
@@ -44,6 +47,7 @@
     width: 100%;
     padding: 25px 30px;
     border-top: 1px solid $colorGray500;
+    background: $colorWhite;
     @include media-640 {
       display: block;
     }
