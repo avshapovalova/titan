@@ -1,0 +1,31 @@
+.gallery {
+  &__item {
+    & img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+.thumbs {
+  @include flex();
+  margin-top: 30px;
+  &__nav {
+    width: 40px;
+    height: 40px;
+    background: url('/img/arrow2.png') 50% 50% no-repeat;
+    background-size: contain;
+    &.m-next {
+      transform: rotate(180deg);
+    }
+  }
+  &__list {
+    width: calc(100% - 80px);
+  }
+  &__item {
+    margin: 0 15px;
+    & img {
+      display: block;
+      width: 100%;
+    }
+  }
+}

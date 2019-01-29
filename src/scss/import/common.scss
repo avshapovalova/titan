@@ -22,6 +22,9 @@ ul {
 ul.type2 {
   list-style: url('/img/check2.png');
   padding-left: 24px;
+  &.m-dd li:not(:first-child) {
+    margin-top: 15px;
+  }
 }
 .link {
   text-decoration: none;
@@ -62,6 +65,9 @@ ul.type2 {
 .page-padding {
   padding-top: 60px;
   padding-bottom: 80px;
+  &.m-no-bottom {
+    padding-bottom: 0;
+  }
   @include media-960 {
     padding-top: 30px;
     padding-bottom: 50px;

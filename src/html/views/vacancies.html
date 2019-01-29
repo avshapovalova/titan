@@ -1,0 +1,87 @@
+<%= _.template(require('./../includes/header.html'))({ bc: true }) %>
+<%= _.template(require('./../includes/svg.html'))() %>
+
+<div class="page">
+    <div class="container">
+        <div class="banner3 m-mt">
+            <img class="banner3__bg" src="/img/bg4.jpg"/>
+            <div class="banner3__title h1">Вакансии компании</div>
+            <p class="banner3__text">В свою компанию мы ищем не просто профессионалов,
+                а командных игроков, инициативных и ответственных</p>
+        </div>
+
+        <div class="page__layout">
+            <div class="page__left">
+                <%= _.template(require('./../includes/sidebar.html'))() %>
+            </div>
+            <div class="page__right">
+                <div class="vacancies">
+                    <div class="vacancies__category js-category">
+                        <div class="vacancies__category-head js-category-head">
+                            <div class="vacancies__category-title">
+                                Административный персонал (52)
+                            </div>
+                        </div>
+                        <div class="vacancies__category-body">
+                            <div class="vacancies__list">
+                                <%= _.template(require('./../includes/vacancy.html'))({ t: 'Специалист по документообороту' }) %>
+                                <%= _.template(require('./../includes/vacancy.html'))({ t: 'Координатор' }) %>
+                                <%= _.template(require('./../includes/vacancy.html'))({ t: 'Специалист по документообороту' }) %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vacancies__category js-category">
+                        <div class="vacancies__category-head js-category-head">
+                            <div class="vacancies__category-title">
+                                Бухгалтерия, управленческий учет, финансы предприятия (4)
+                            </div>
+                        </div>
+                        <div class="vacancies__category-body">
+                            <div class="vacancies__list">
+                                <%= _.template(require('./../includes/vacancy.html'))({ t: 'Специалист по документообороту' }) %>
+                                <%= _.template(require('./../includes/vacancy.html'))({ t: 'Координатор' }) %>
+                                <%= _.template(require('./../includes/vacancy.html'))({ t: 'Специалист по документообороту' }) %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vacancies__category js-category">
+                        <div class="vacancies__category-head js-category-head">
+                            <div class="vacancies__category-title">
+                                Начало карьеры, студенты (15)
+                            </div>
+                        </div>
+                        <div class="vacancies__category-body">
+                            <div class="vacancies__list">
+                                <%= _.template(require('./../includes/vacancy.html'))({ t: 'Специалист по документообороту' }) %>
+                                <%= _.template(require('./../includes/vacancy.html'))({ t: 'Координатор' }) %>
+                                <%= _.template(require('./../includes/vacancy.html'))({ t: 'Специалист по документообороту' }) %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vacancies__category js-category">
+                        <div class="vacancies__category-head js-category-head">
+                            <div class="vacancies__category-title">
+                                Консультирование (1)
+                            </div>
+                        </div>
+                        <div class="vacancies__category-body">
+                            <div class="vacancies__list">
+                                <%= _.template(require('./../includes/vacancy.html'))({ t: 'Специалист по документообороту' }) %>
+                                <%= _.template(require('./../includes/vacancy.html'))({ t: 'Координатор' }) %>
+                                <%= _.template(require('./../includes/vacancy.html'))({ t: 'Специалист по документообороту' }) %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="application/javascript">
+  $(document).ready(function(){
+    PageVacancies.init()
+  })
+</script>
+
+<%= _.template(require('./../includes/footer.html'))() %>

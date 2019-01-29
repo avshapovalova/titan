@@ -1,0 +1,79 @@
+<%= _.template(require('./../includes/header.html'))({ bc: true }) %>
+<%= _.template(require('./../includes/svg.html'))() %>
+
+<div class="page">
+    <div class="container">
+        <div class="banner3 m-mt">
+            <img class="banner3__bg" src="/img/bg7.jpg"/>
+            <div class="banner3__title h1">Разработка проектной документации</div>
+            <p class="banner3__text">Разработка документации — <b>10 рабочих дней</b>.<br/>
+                Согласование с Ростехнадзором — в течение <b>1 месяца</b>.
+            </p>
+        </div>
+
+        <div class="block2 m-margin1">
+            <div class="block2__left">
+                <img src="/img/icon_quote2.png"/>
+                <p class="block2__quote">
+                    Благодаря опыту и высокой квалификации инженеров-проектировщиков мы разрабатываем проектную документацию
+                    в соответствии с заданием клиента
+                    и требованиями нормативно-технических документов <b>в течение 10 рабочих дней.</b>
+                </p>
+            </div>
+            <div class="block2__right">
+                <p><b>Разработка проектной документации
+                    проходит в несколько этапов:</b></p>
+                <ul class="type2">
+                    <li>составление технического задания,</li>
+                    <li>мониторинг работы объекта с целью определения его технического состояния,</li>
+                    <li>разработка проектной документации инженерами-проектировщиками,</li>
+                    <li>согласование документации с партнёром,</li>
+                    <li>доработка в связи с пожеланиями партнёра,</li>
+                    <li>вручение согласованной документации.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Реализованные проекты</h2>
+
+        <div class="projects m-mt m-mb">
+            <div class="projects__item">
+                <div class="projects__item-info">
+                    <a class="projects__item-title" href="">Подстанция 110/10 кВ №347 для нужд ПАО «Ленэнерго»</a>
+                    <p class="projects__item-text">Полная реконструкция подстанции
+                        110/10 кВ №347 с заменой
+                        распределительного устройства
+                        и общеподстанционного пункта
+                        управления (ОПУ).
+                    </p>
+                    <a class="projects__item-link link" href="">Подробнее</a>
+                </div>
+                <a class="projects__item-image" href="">
+                    <img src="/uploads/project1.jpg"/>
+                </a>
+            </div>
+
+            <div class="projects__item">
+                <div class="projects__item-info">
+                    <a class="projects__item-title" href="">Подстанция 110/10 кВ «Высоцкая» для электроснабжения завода СПГ Криогаз-Высоцк (Новатэк)</a>
+                    <p class="projects__item-text">Формирование рабочей документации,
+                        согласование проектных решений
+                        со всеми участниками проекта
+                        и производство оборудования
+                        для подстанции.
+                    </p>
+                    <a class="projects__item-link link" href="">Подробнее</a>
+                </div>
+                <a class="projects__item-image" href="">
+                    <img src="/uploads/project2.jpg"/>
+                </a>
+            </div>
+
+            <div class="projects__more center">
+                <a class="button m-styled1" href="">Показать еще</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))() %>

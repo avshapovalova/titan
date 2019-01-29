@@ -1,0 +1,50 @@
+<%= _.template(require('./../includes/header.html'))({ bc: true }) %>
+<%= _.template(require('./../includes/svg.html'))() %>
+
+<div class="page">
+    <div class="container">
+        <h1 class="equipments-heading">Оборудование</h1>
+        <div class="equipments-intro">
+            <div class="equipments-intro__left">
+                Мы изготавливаем электрооборудование различной сложности и объемов.
+                На базе ассортиментного ряда нашей продукции можно сформировать готовые комплексные решения для энергообеспечения любого объекта.
+                Также на индивидуальных условиях мы функционально и визуально дорабатываем оборудование с учётом требований заказчика.
+            </div>
+            <div class="equipments-intro__right">
+                <div class="equipments-intro__title">Каталог продукции</div>
+                <a class="button m-styled1" href="">
+                    <div class="button__download">
+                        <img src="/img/icon_download.png"/>
+                        <div class="button__download-text">
+                            <div><b>Скачать</b></div>
+                            <div>PDF, 17 mb</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="page__layout">
+            <div class="page__left">
+                <%= _.template(require('./../includes/sidebar_eq.html'))() %>
+            </div>
+            <div class="page__right">
+                <div class="equipments">
+                    <%= _.template(require('./../includes/equipment.html'))() %>
+                    <%= _.template(require('./../includes/equipment.html'))() %>
+                    <%= _.template(require('./../includes/equipment.html'))() %>
+                    <%= _.template(require('./../includes/equipment.html'))() %>
+                    <%= _.template(require('./../includes/equipment.html'))() %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="application/javascript">
+  $(document).ready(function(){
+    PageVacancies.init()
+  })
+</script>
+
+<%= _.template(require('./../includes/footer.html'))() %>

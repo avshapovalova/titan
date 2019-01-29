@@ -1,0 +1,51 @@
+<%= _.template(require('./../includes/header.html'))({ bc: true }) %>
+<%= _.template(require('./../includes/svg.html'))() %>
+
+<div class="page">
+    <div class="container">
+        <div class="banner3 m-mt">
+            <img class="banner3__bg" src="/img/bg5.jpg"/>
+            <div class="banner3__title h1">Реализованные проекты</div>
+        </div>
+
+        <div class="projects m-mt m-mb">
+            <div class="projects__item">
+                <div class="projects__item-info">
+                    <a class="projects__item-title" href="">Подстанция 110/10 кВ №347 для нужд ПАО «Ленэнерго»</a>
+                    <p class="projects__item-text">Полная реконструкция подстанции
+                        110/10 кВ №347 с заменой
+                        распределительного устройства
+                        и общеподстанционного пункта
+                        управления (ОПУ).
+                    </p>
+                    <a class="projects__item-link link" href="">Подробнее</a>
+                </div>
+                <a class="projects__item-image" href="">
+                    <img src="/uploads/project1.jpg"/>
+                </a>
+            </div>
+
+            <div class="projects__item">
+                <div class="projects__item-info">
+                    <a class="projects__item-title" href="">Подстанция 110/10 кВ «Высоцкая» для электроснабжения завода СПГ Криогаз-Высоцк (Новатэк)</a>
+                    <p class="projects__item-text">Формирование рабочей документации,
+                        согласование проектных решений
+                        со всеми участниками проекта
+                        и производство оборудования
+                        для подстанции.
+                    </p>
+                    <a class="projects__item-link link" href="">Подробнее</a>
+                </div>
+                <a class="projects__item-image" href="">
+                    <img src="/uploads/project2.jpg"/>
+                </a>
+            </div>
+
+            <div class="projects__more center">
+                <a class="button m-styled1" href="">Показать еще</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))() %>

@@ -1,0 +1,26 @@
+<%= _.template(require('./../includes/header.html'))({ bc: true }) %>
+<%= _.template(require('./../includes/svg.html'))() %>
+
+<div class="page">
+    <div class="container">
+        <div class="banner3 m-mt">
+            <img class="banner3__bg" src="/img/bg6.jpg"/>
+            <div class="banner3__title h1">Услуги</div>
+            <p class="banner3__text">Наша компания берёт под свой контроль ведение энергопроектов. Мы готовы адаптировать
+                технологический процесс и разработать индивидуальные схемы, чтобы клиент был уверен
+                в эффективной реализации поставленной задачи в оптимальные сроки, учитывая
+                финансовые возможности и подводные камни.
+            </p>
+        </div>
+
+        <div class="services m-margin">
+            <%= _.template(require('./../includes/service.html'))({ i: 1 }) %>
+            <%= _.template(require('./../includes/service.html'))({ i: 2 }) %>
+            <%= _.template(require('./../includes/service.html'))({ i: 3 }) %>
+            <%= _.template(require('./../includes/service.html'))({ i: 4 }) %>
+            <%= _.template(require('./../includes/service.html'))({ i: 5 }) %>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))() %>

@@ -133,6 +133,8 @@
     margin-top: 60px;
     @include media-960 {
       margin-top: 40px;
+    }
+    @include media-768 {
       padding: 20px;
     }
     @include media-640 {

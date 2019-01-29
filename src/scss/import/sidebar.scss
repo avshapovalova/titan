@@ -22,5 +22,13 @@
       background: $colorPrimary;
       border-color: $colorPrimary;
     }
+    @include media-768 {
+      padding: 12px 20px;
+      font-size: 14px;
+    }
+    @include media-640 {
+      padding: 12px 15px;
+      font-size: 12px;
+    }
   }
 }
