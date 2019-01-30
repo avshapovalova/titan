@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <link rel="stylesheet" href="/js/libs/owl/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="/js/libs/owl/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/js/libs/slick/slick.css">
+  <link rel="stylesheet" href="/js/libs/slick/slick-theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.bundle.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <title>Titan</title>
+</head>
+
+<body>
+  <script src="/js/libs/jquery-3.3.1.min.js"></script>
+  <header class="header">
+    <div class="header__search-block js-search-block">
+      <form class="header__search-block-inner container">
+        <input class="header__search-block-input" type="text" />
+        <button class="header__search-block-submit button">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+    </div>
+    <div class="header__top container">
+      <div class="header__logo">
+        <div class="logo">
+          <img src="/img/titan_logo.png" />
+        </div>
+      </div>
+      <a class="header__search js-search" href="javascript://">
+        <img src="/img/icon_search.png" />
+        <span>Поиск</span>
+      </a>
+      <a class="header__feedback" href="">
+        <img src="/img/icon_feedback.png" />
+        <span>Обратная связь</span>
+      </a>
+      <a class="header__email" href="mailto:te@szte.ru">te@szte.ru</a>
+      <a class="header__phone" href="tel:+78126120551">+7 (812) 612-05-51</a>
+      <div class="header__lang">
+        <a class="header__lang-link m-active" href="">Ru</a>
+        <a class="header__lang-link" href="">En</a>
+      </div>
+      <a class="header__burger js-burger" href="javascript://">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+    <div class="header__divider"></div>
+    <div class="header__menu-shader js-menu-shader"></div>
+    <div class="header__menu container js-menu">
+      <a class="header__menu-close js-menu-close" href="javascript://">&times;</a>
+
+      <a class="header__menu-link m-active" href="">О компании</a>
+      <a class="header__menu-link" href="">Услуги</a>
+      <a class="header__menu-link" href="">Оборудование</a>
+      <a class="header__menu-link" href="">Реализованные проекты</a>
+      <a class="header__menu-link" href="">Новости</a>
+      <a class="header__menu-link" href="">Статьи</a>
+      <a class="header__menu-link" href="">Контакты</a>
+    </div>
+
+
+    <div class="header__divider"></div>
+    <div class="header__bc container">
+      <span class="header__bc-item">Главная</span>
+      <a class="header__bc-item" href="">Контакты</a>
+      <a class="header__bc-item" href="">Что-то еще длинное</a>
+    </div>
+    <div class="header__divider"></div>
+
+  </header>
+
+  <div style="display: none">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    </svg>
+  </div>
+
+
+  <div class="page">
+    <div class="container page-padding m-no-bottom">
+      <div class="equipment-detail">
+        <div class="equipment-detail__head">
+          <div class="equipment-detail__left">
+            <div class="gallery js-gallery">
+              <div class="gallery__item">
+                <img src="//placeimg.com/500/500/tech?1" />
+              </div>
+              <div class="gallery__item">
+                <img src="//placeimg.com/500/500/tech?2" />
+              </div>
+              <div class="gallery__item">
+                <img src="//placeimg.com/500/500/tech?3" />
+              </div>
+              <div class="gallery__item">
+                <img src="//placeimg.com/500/500/tech?4" />
+              </div>
+            </div>
+
+            <div class="thumbs">
+              <button class="button thumbs__nav m-prev js-thumbs-prev"></button>
+              <div class="thumbs__list js-thumbs">
+                <div class="thumbs__item">
+                  <img src="//placeimg.com/500/500/tech?1" />
+                </div>
+                <div class="thumbs__item">
+                  <img src="//placeimg.com/500/500/tech?2" />
+                </div>
+                <div class="thumbs__item">
+                  <img src="//placeimg.com/500/500/tech?3" />
+                </div>
+                <div class="thumbs__item">
+                  <img src="//placeimg.com/500/500/tech?4" />
+                </div>
+              </div>
+              <button class="button thumbs__nav m-next js-thumbs-next"></button>
+            </div>
+          </div>
+          <div class="equipment-detail__right">
+            <h1 class="equipment-detail__heading h2">Шкафы релейной защиты и автоматики для транформаторных подстанций ШЭРЗ</h1>
+
+            <a class="equipment-detail__btn button m-styled0" href="">Оборудование РЗА и АСУ ТП</a>
+
+            <div class="equipment-detail__block">
+              <h3 class="equipment-detail__title">Эта серия применяется для:</h3>
+              <ul class="type2">
+                <li>комплексной защиты оборудования
+                  трансформаторных станций и подстанций;</li>
+                <li>автоматизации и управления
+                  коммутационными аппаратами;</li>
+                <li>локальной и общестанционной
+                  противоаварийной автоматики.</li>
+              </ul>
+            </div>
+            <div class="equipment-detail__block">
+              <h3 class="equipment-detail__title">Серия ШЭРЗ обеспечивает защиту и автоматизацию следующим видам присоединений:</h3>
+              <ul class="type2">
+                <li>комплексной защиты оборудования
+                  трансформаторных станций и подстанций;</li>
+                <li>автоматизации и управления
+                  коммутационными аппаратами;</li>
+                <li>локальной и общестанционной
+                  противоаварийной автоматики.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <img class="equipment-detail__wide-image" src="/uploads/equipment1.jpg" />
+      </div>
+
+      <h2>Конструкция</h2>
+
+      <div class="equipment-detail__block m-padding2">
+        <h3 class="equipment-detail__title">Особенности</h3>
+        <div class="equipment-detail__block2">
+          <div class="equipment-detail__block2-row">
+            <div class="equipment-detail__block2-title">Каркас:</div>
+            <div class="equipment-detail__block2-text">металлоконструкция импортных
+              и отечественных производителей
+              — Rittal, Tekpan, Siemens, DKC
+              и других.
+            </div>
+          </div>
+          <div class="equipment-detail__block2-row">
+            <div class="equipment-detail__block2-title">Обслуживание:</div>
+            <div class="equipment-detail__block2-text">одностороннее / двустороннее.</div>
+          </div>
+          <div class="equipment-detail__block2-row">
+            <div class="equipment-detail__block2-title">Передняя дверь:</div>
+            <div class="equipment-detail__block2-text">глухая / обзорная.</div>
+          </div>
+          <div class="equipment-detail__block2-row">
+            <div class="equipment-detail__block2-title">Задняя дверь:</div>
+            <div class="equipment-detail__block2-text">двустворчатая / одностворчатая.</div>
+          </div>
+          <div class="equipment-detail__block2-row">
+            <div class="equipment-detail__block2-title">Подвод кабелей:</div>
+            <div class="equipment-detail__block2-text">снизу, через днище шкафа / сверху,
+              через щеточный буртик.</div>
+          </div>
+          <div class="equipment-detail__block2-row">
+            <div class="equipment-detail__block2-title">Ряды зажимов:</div>
+            <div class="equipment-detail__block2-text">на стенках шкафа.</div>
+          </div>
+        </div>
+      </div>
+      <div class="equipment-detail__blocks">
+        <div class="equipment-detail__block m-padding2">
+          <h3 class="equipment-detail__title">Конструкция шкафов состоит из модулей:</h3>
+          <ul class="type2 m-dd">
+            <li>с ключами управления;</li>
+            <li>с микропроцессорными терминалами;</li>
+            <li>с элементами сигнализации.</li>
+          </ul>
+        </div>
+        <div class="equipment-detail__block m-padding2">
+          <h3 class="equipment-detail__title">Данная конструкция обеспечивает:</h3>
+          <ul class="type2 m-dd">
+            <li>удобство и безопасность обслуживания;</li>
+            <li>легкость установки и подключения
+              внешних соединений;</li>
+            <li>исключение возможности взаимного
+              влияния устройств;</li>
+            <li>доступ к контактным соединениям;</li>
+            <li>удобство ремонта и замены изношенных
+              деталей аппаратов;</li>
+            <li>возможность доработки и замены каждого
+              модуля по отдельности.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="equipment-tech">
+      <div class="container">
+        <h2>Технические характеристики</h2>
+        <div class="equipment-tech__table-wrapper">
+          <table class="equipment-tech__table">
+            <tr>
+              <td>Номинальное напряжение целей питания постоянного тока</td>
+              <td>220В</td>
+            </tr>
+            <tr>
+              <td>Номинальное напряжение целей освещения переменного тока</td>
+              <td>220В, 50 Гц</td>
+            </tr>
+            <tr>
+              <td>Номинальное напряжение изоляции</td>
+              <td>≥ 2000В</td>
+            </tr>
+            <tr>
+              <td>Условия окружающей среды в части электромагнитной совместимости</td>
+              <td>класс А</td>
+            </tr>
+            <tr>
+              <td>Степень защиты</td>
+              <td>до IP54</td>
+            </tr>
+            <tr>
+              <td>Стандартные габаритные размеры* (ширина х высота х глубина)</td>
+              <td>800 х 2000 х 600 мм</td>
+            </tr>
+            <tr>
+              <td>Номинальное напряжение целей питания постоянного тока</td>
+              <td>220В</td>
+            </tr>
+            <tr>
+              <td>Номинальное напряжение целей освещения переменного тока</td>
+              <td>220В, 50 Гц</td>
+            </tr>
+          </table>
+        </div>
+        <div class="equipment-tech__info">
+          Возможно изготовление шкафов других размеров по желанию партнера.
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Реализованные промышленные проекты</h2>
+
+      <div class="projects m-mt m-mb">
+        <div class="projects__item">
+          <div class="projects__item-info">
+            <a class="projects__item-title" href="">Подстанция 110/10 кВ №347 для нужд ПАО «Ленэнерго»</a>
+            <p class="projects__item-text">Полная реконструкция подстанции
+              110/10 кВ №347 с заменой
+              распределительного устройства
+              и общеподстанционного пункта
+              управления (ОПУ).
+            </p>
+            <a class="projects__item-link link" href="">Подробнее</a>
+          </div>
+          <a class="projects__item-image" href="">
+            <img src="/uploads/project1.jpg" />
+          </a>
+        </div>
+
+        <div class="projects__item">
+          <div class="projects__item-info">
+            <a class="projects__item-title" href="">Подстанция 110/10 кВ «Высоцкая» для электроснабжения завода СПГ Криогаз-Высоцк (Новатэк)</a>
+            <p class="projects__item-text">Формирование рабочей документации,
+              согласование проектных решений
+              со всеми участниками проекта
+              и производство оборудования
+              для подстанции.
+            </p>
+            <a class="projects__item-link link" href="">Подробнее</a>
+          </div>
+          <a class="projects__item-image" href="">
+            <img src="/uploads/project2.jpg" />
+          </a>
+        </div>
+
+        <div class="projects__more center">
+          <a class="button m-styled1" href="">Еще проекты</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="application/javascript">
+    $(document).ready(function() {
+      PageEquipment.init()
+    })
+  </script>
+
+  <footer class="footer">
+    <div class="footer__top container">
+      <div class="footer__top-left">
+        <div class="footer__column">
+          <div class="footer__logo">
+            <div class="logo">
+              <img src="/img/titan_logo.png" />
+            </div>
+          </div>
+        </div>
+        <div class="footer__column">
+          <a class="footer__link" href="">О компании</a>
+          <a class="footer__link" href="">Услуги</a>
+          <a class="footer__link" href="">Оборудование</a>
+          <a class="footer__link" href="">Контакты</a>
+        </div>
+        <div class="footer__column">
+          <a class="footer__link" href="">Новости</a>
+          <a class="footer__link" href="">Статьи</a>
+          <a class="footer__link" href="">Реализованные проекты</a>
+        </div>
+      </div>
+      <div class="footer__top-right">
+        <a class="footer__phone" href="tel:+78126120551">+7 (812) 612 05-51</a>
+        <a class="footer__email" href="mailto:te@szte.ru">te@szte.ru</a>
+        <div class="footer__address">Санкт-Петербург,<br>ул. Электропультовцев 7</div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom-inner container">
+        <div>ТитанИнжиниринг 2019</div>
+        <a class="footer__privacy" href="">Политика конфиденциальности</a>
+        <a class="footer__made" href="">Сделано в <img src="/img/azbuka_logo.png" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/libs/jquery.matchHeight.js"></script>
+  <script src="/js/libs/jquery.animateNumber.min.js"></script>
+  <script src="/js/libs/owl/owl.carousel.min.js"></script>
+  <script src="/js/libs/nouislider/nouislider.js"></script>
+  <script src="/js/libs/slick/slick.min.js"></script>
+  <script src="/js/bundle.js"></script>
+  <script src="/js/App.js"></script>
+  <script src="/js/PageMain.js"></script>
+  <script src="/js/PageContacts.js"></script>
+  <script src="/js/PageVacancies.js"></script>
+  <script src="/js/PageEquipment.js"></script>
+  <script type="application/javascript">
+    App.init()
+  </script>
+</body>
+
+</html>

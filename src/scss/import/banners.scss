@@ -164,6 +164,10 @@
     height: 100%;
     object-fit: cover;
   }
+  &__sub {
+    font-size: 16px;
+    font-weight: 900;
+  }
   &__text {
     max-width: 600px;
   }
