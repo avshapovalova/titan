@@ -264,5 +264,11 @@
     font-weight: 700;
     border: 1px solid $colorSecondary;
     text-align: center;
+    transition: all 0.2s;
+    &:hover {
+      background: $colorPrimary;
+      border-color: $colorPrimary;
+      color: $colorWhite;
+    }
   }
 }

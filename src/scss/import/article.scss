@@ -66,6 +66,12 @@
       transform: translateX(-50%);
       background: url('/img/icon_quote.png') no-repeat;
     }
+    &:hover {
+      border-color: $colorPrimary;
+      &::before {
+        background: url('/img/icon_quote2.png') no-repeat;
+      }
+    }
   }
   &__share {
     margin-right: 100px;

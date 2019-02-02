@@ -89,6 +89,7 @@
     min-height: 440px;
     padding: 20px 80px;
     border: 1px solid $colorPrimary;
+    transition: all 0.3s;
     @include media-960 {
       min-height: auto;
       width: 100%;
@@ -98,6 +99,9 @@
     }
     @include media-640 {
       padding: 15px;
+    }
+    &:hover {
+      border-width: 3px;
     }
   }
   &__right {

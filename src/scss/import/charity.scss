@@ -70,6 +70,12 @@
     transform: translateX(-50%);
     background: url('/img/icon_quote.png') no-repeat;
   }
+  &:hover {
+    border-color: $colorPrimary;
+  }
+  &:hover::before {
+    background: url('/img/icon_quote2.png') no-repeat;
+  }
   & b {
     color: $colorBlack;
   }
@@ -133,6 +139,9 @@
   margin-bottom: 30px;
   @include media-640 {
     margin-bottom: 20px;
+  }
+  &:hover {
+    border-color: $colorPrimary;
   }
   &::before {
     content: '';
@@ -237,6 +246,9 @@
   }
   @include media-640 {
     font-size: 14px;
+  }
+  &:hover {
+    border-color: $colorPrimary;
   }
 }
 

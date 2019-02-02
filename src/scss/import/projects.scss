@@ -28,6 +28,9 @@
     @include media-640 {
       padding: 15px;
     }
+    &:hover {
+      border-color: $colorPrimary;
+    }
   }
   &__item-info {
     max-width: 40%;

@@ -11,12 +11,16 @@
     background: $colorPrimary;
     color: $colorWhite;
     padding: 20px 40px;
+    &:hover {
+      background-color: $colorPrimaryHover;
+    }
   }
 
   &.m-styled1 {
     background: $colorPrimary;
     color: $colorWhite;
-    padding: 20px 40px;
+    padding: 10px 40px;
+    min-height: 77px;
     margin-left: 19px;
     margin-right: 19px;
     position: relative;
@@ -50,6 +54,11 @@
     }
     &:hover::after {
       background: url("data:image/svg+xml,%0A%3Csvg viewBox='0 0 19 77' version='1.1' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpolygon id='Path' fill='%23da6d45' transform='translate(9.500000, 38.500000) rotate(180.000000) translate(-9.500000, -38.500000) ' points='0 0 0 58 19 77 19 0'%3E%3C/polygon%3E%3C/svg%3E") no-repeat;
+    }
+    @include media-640 {
+      padding: 10px 30px;
+      min-height: 50px;
+      font-size: 14px;
     }
   }
 

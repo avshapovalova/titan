@@ -84,6 +84,9 @@
     color: $colorSecondary;
     border-bottom: 1px solid $colorGray500;
     margin-left: 100px;
+    &:hover {
+      color: $colorPrimary;
+    }
     @include media-960 {
       display: none;
     }
@@ -93,6 +96,9 @@
     text-transform: uppercase;
     color: $colorSecondary;
     margin-left: 35px;
+    &:hover {
+      color: $colorPrimary;
+    }
     @include media-768 {
       display: none;
     }

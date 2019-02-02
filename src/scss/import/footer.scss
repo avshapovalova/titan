@@ -38,6 +38,9 @@ $colorFooterLink: #e0f0ff;
     display: block;
     color: $colorBlack;
     text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
     &:not(:last-child) {
       margin-bottom: 20px;
     }
@@ -56,6 +59,9 @@ $colorFooterLink: #e0f0ff;
     color: $colorSecondary;
     text-decoration-color: $colorGray500;
     margin-bottom: 20px;
+    &:hover {
+      color: $colorPrimary;
+    }
   }
   &__address {
     font-weight: 400;
@@ -80,6 +86,9 @@ $colorFooterLink: #e0f0ff;
   &__privacy {
     color: $colorFooterLink;
     text-decoration-color: #2d608e;
+    &:hover {
+      color: $colorWhite;
+    }
     @include media-960 {
       margin-top: 8px;
     }

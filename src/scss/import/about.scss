@@ -68,9 +68,15 @@
   background: $colorSecondary;
   border: 2px solid $colorWhite;
   padding: 25px 35px;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    top: -270px;
+    background: #16598c;
+  }
   @include media-960 {
     position: relative;
     top: 0;
+    &:hover { top: 0; }
   }
   &::after {
     content: '';
@@ -111,6 +117,13 @@
   border: 1px solid $colorPrimary;
   font-style: italic;
   font-size: 14px;
+  transition: all 0.4s ease-in-out;
+  background: transparent;
+  &:hover {
+    bottom: 20px;
+    border-color: $colorSecondary;
+    background: $colorWhite;
+  }
   @include media-960 {
     position: relative;
     top: 0;

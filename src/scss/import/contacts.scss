@@ -24,6 +24,12 @@
     font-weight: 700;
     margin-bottom: 15px;
   }
+  &__address {
+    white-space: nowrap;
+    @include media-1200 {
+      white-space: unset;
+    }
+  }
   &__phone {
     display: block;
     color: $colorBlack;
@@ -31,9 +37,10 @@
     white-space: nowrap;
   }
   &__email {
-    display: block;
+    display: inline-block;
     color: $colorPrimary;
     text-decoration: none;
+    border-bottom: 1px dashed $colorPrimary;
   }
   & .button {
     white-space: nowrap;
