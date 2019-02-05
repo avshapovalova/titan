@@ -213,11 +213,6 @@
         margin-right: 0;
       }
     }
-    @include media-640 {
-      width: 100%;
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
   }
   &__item-image {
     display: block;
@@ -233,6 +228,9 @@
     background: $colorWhite;
     padding: 30px;
     line-height: 1.3;
+    @include media-640 {
+      padding: 15px;
+    }
   }
   &__item-name {
     font-weight: 700;

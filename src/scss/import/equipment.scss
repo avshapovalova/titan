@@ -234,9 +234,20 @@
     margin: 40px 0 50px;
     border-spacing: 0;
     width: 100%;
-    min-width: 640px;
     @include media-768 {
       margin: 20px 0;
+      & {
+        display: block;
+      }
+      & td {
+        display: block;
+      }
+      & tr td:last-child {
+        text-align: left;
+      }
+      & tr {
+        display: block;
+      }
     }
     @include media-640 {
       font-size: 14px;

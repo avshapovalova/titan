@@ -28,10 +28,6 @@
         margin-right: 0;
       }
     }
-    @include media-480 {
-      width: 100%;
-      margin-right: 0;
-    }
   }
   &__image {
     display: block;
