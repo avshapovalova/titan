@@ -23,7 +23,7 @@
         <div class="footer__top-right">
             <a class="footer__phone" href="tel:+78126120551">+7 (812) 612 05-51</a>
             <a class="footer__email" href="mailto:te@szte.ru">te@szte.ru</a>
-            <div class="footer__address">Санкт-Петербург,<br>ул. Электропультовцев 7</div>
+            <div class="footer__address">Санкт-Петербург,<br>ул. Электропультовцев д. 7, лит. Х</div>
         </div>
     </div>
     <div class="footer__bottom">
@@ -43,25 +43,26 @@
     </div>
     <form class="feedback__form">
         <div class="feedback__row">
-            <label class="feedback__label" for="f-name">Имя</label>
-            <input class="feedback__input input" id="f-name" type="text" name="name"/>
+            <label class="feedback__label m-required" for="f-name">Имя</label>
+            <input class="feedback__input input m-error" id="f-name" type="text" name="name"/>
+            <div class="feedback__error">Пример ошибки</div>
         </div>
         <div class="feedback__row">
-            <label class="feedback__label" for="f-email">E-mail</label>
-            <input class="feedback__input input" id="f-email" type="text" name="email"/>
+            <label class="feedback__label m-required" for="f-email">E-mail</label>
+            <input class="feedback__input input" id="f-email" type="email" name="email"/>
         </div>
         <div class="feedback__row">
-            <label class="feedback__label" for="f-phone">Телефон</label>
-            <input class="feedback__input input" id="f-phone" type="text" name="phone"/>
+            <label class="feedback__label m-required" for="f-phone">Телефон</label>
+            <input class="feedback__input input js-phone" id="f-phone" type="text" name="phone"/>
         </div>
         <div class="feedback__row">
-            <label class="feedback__label" for="f-text">Текст сообщения</label>
+            <label class="feedback__label m-required" for="f-text">Текст сообщения</label>
             <textarea class="feedback__message textarea" id="f-text" name="text"></textarea>
         </div>
         <div class="feedback__actions">
             <div class="feedback__l">
                 <input id="f-agree" type="checkbox" name="agree"/>
-                <label for="f-agree">
+                <label class="feedback__agree m-error" for="f-agree">
                     Нажимая "Отправить", я выражаю согласие на предоставление
                     <a class="link" href="">Персональных данных</a>
                 </label>
@@ -75,6 +76,7 @@
 
 <script src="/js/libs/jquery.matchHeight.js"></script>
 <script src="/js/libs/jquery.animateNumber.min.js"></script>
+<script src="/js/libs/jquery.masked.min.js"></script>
 <script src="/js/libs/owl/owl.carousel.min.js"></script>
 <script src="/js/libs/nouislider/nouislider.js"></script>
 <script src="/js/libs/slick/slick.min.js"></script>

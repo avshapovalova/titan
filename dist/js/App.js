@@ -40,6 +40,7 @@ const App = {
     const $shader = $('.js-shader')
     const $feedback = $('.js-feedback')
     const $close = $('.js-feedback-close')
+    $('.js-phone').mask("+7 (999) 999-9999")
 
     $open.on('click', function(e){
       e.preventDefault()
