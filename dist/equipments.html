@@ -37,7 +37,7 @@
         <img src="/img/icon_search2.png" />
         <span>Поиск</span>
       </a>
-      <a class="header__feedback" href="">
+      <a class="header__feedback js-feedback-open" href="">
         <img src="/img/icon_feedback2.png" />
         <span>Обратная связь</span>
       </a>
@@ -293,6 +293,44 @@
       </div>
     </div>
   </footer>
+
+  <div class="shader js-shader"></div>
+  <div class="feedback js-feedback">
+    <div class="feedback__head">
+      <div class="feedback__title h2">Обратная связь</div>
+      <div class="feedback__close js-feedback-close">&times;</div>
+    </div>
+    <form class="feedback__form">
+      <div class="feedback__row">
+        <label class="feedback__label" for="f-name">Имя</label>
+        <input class="feedback__input input" id="f-name" type="text" name="name" />
+      </div>
+      <div class="feedback__row">
+        <label class="feedback__label" for="f-email">E-mail</label>
+        <input class="feedback__input input" id="f-email" type="text" name="email" />
+      </div>
+      <div class="feedback__row">
+        <label class="feedback__label" for="f-phone">Телефон</label>
+        <input class="feedback__input input" id="f-phone" type="text" name="phone" />
+      </div>
+      <div class="feedback__row">
+        <label class="feedback__label" for="f-text">Текст сообщения</label>
+        <textarea class="feedback__message textarea" id="f-text" name="text"></textarea>
+      </div>
+      <div class="feedback__actions">
+        <div class="feedback__l">
+          <input id="f-agree" type="checkbox" name="agree" />
+          <label for="f-agree">
+            Нажимая "Отправить", я выражаю согласие на предоставление
+            <a class="link" href="">Персональных данных</a>
+          </label>
+        </div>
+        <div class="feedback__r">
+          <button type="submit" class="button m-styled0">Отправить</button>
+        </div>
+      </div>
+    </form>
+  </div>
 
   <script src="/js/libs/jquery.matchHeight.js"></script>
   <script src="/js/libs/jquery.animateNumber.min.js"></script>

@@ -2,6 +2,7 @@ const App = {
   init: function() {
     this.initMobileMenu()
     this.initSearch()
+    this.initFeedback()
   },
 
   initMobileMenu: function() {
@@ -33,4 +34,29 @@ const App = {
       }
     })
   },
+
+  initFeedback: function() {
+    const $open = $('.js-feedback-open')
+    const $shader = $('.js-shader')
+    const $feedback = $('.js-feedback')
+    const $close = $('.js-feedback-close')
+
+    $open.on('click', function(e){
+      e.preventDefault()
+      open()
+    })
+
+    $shader.on('click', close)
+    $close.on('click', close)
+
+    function open() {
+      $shader.addClass('m-active')
+      $feedback.addClass('m-active')
+    }
+
+    function close() {
+      $shader.removeClass('m-active')
+      $feedback.removeClass('m-active')
+    }
+  }
 }

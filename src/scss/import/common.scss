@@ -79,6 +79,30 @@ ul.type2 {
     padding-bottom: 30px;
   }
 }
+.input, .textarea {
+  background: $colorWhite;
+  border: 1px solid $colorGray300;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.textarea {
+  padding: 15px;
+}
+.shader {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0);
+  z-index: 100;
+  transition: all 0.2s ease-in-out;
+  &.m-active {
+    pointer-events: auto;
+    background: rgba(0,0,0,0.3);
+  }
+}
 h1,
 .h1 {
   font-size: 32px;
