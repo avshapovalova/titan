@@ -5,6 +5,8 @@
   flex-wrap: wrap;
 
   &__item {
+    display: block;
+    text-decoration: none;
     width: calc(100% / 3 - 20px);
     margin-right: 30px;
     margin-bottom: 25px;
@@ -35,6 +37,7 @@
   }
   &__title {
     @include flex();
+    color: $colorBlack;
     margin-top: 10px;
     font-size: 14px;
   }
