@@ -113,7 +113,9 @@
                 </div>
             </div>
             <div class="main2__detail">
-                <img class="main2__image js-main2-img" src=""/>
+                <div class="main2__image">
+                    <img class="js-main2-img zoom" src=""/>
+                </div>
                 <div class="main2__text">
                     <div class="main2__text-inner js-main2-text"></div>
                 </div>
@@ -123,7 +125,13 @@
     </div>
 
     <div class="main3">
-        <iframe class="main3__inner" width="560" height="315" src="https://www.youtube.com/embed/BJ60LXggVpE?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <a id="video-toggle" class="main3__inner" href="javascript://">
+            <img class="main3__icon" src="/img/main3_play.png"/>
+            <span>Смотреть видео о компании</span>
+        </a>
+        <div id="video" class="main3__video">
+            <iframe class="main3__inner" width="560" height="315" src="https://www.youtube.com/embed/v1f7xGEvwk8?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
 
     <%= _.template(require('./../includes/articles.html'))({ title: 'Новости' }) %>

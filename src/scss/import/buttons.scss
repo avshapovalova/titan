@@ -32,18 +32,18 @@
       content: '';
       position: absolute;
       top: 0;
-      width: 19px;
+      width: 20px;
       height: 100%;
       background-size: auto 100%;
     }
     &::before {
       left: 0;
-      transform: translate(-100%, 0);
+      transform: translate(-19px, 0);
       background: url("data:image/svg+xml,%0A%3Csvg viewBox='0 0 20 77' version='1.1' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpolygon id='Path' fill='%23f58545' points='0 0 0 58 19 77 20 77 20 0 19 0'%3E%3C/polygon%3E%3C/svg%3E") no-repeat;
     }
     &::after {
       right: 0;
-      transform: translate(100%, 0);
+      transform: translate(19px, 0);
       background: url("data:image/svg+xml,%0A%3Csvg viewBox='0 0 20 77' version='1.1' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpolygon id='Path' fill='%23f58545' transform='translate(9.500000, 38.500000) rotate(180.000000) translate(-9.500000, -38.500000) ' points='0 0 0 58 19 77 20 77 20 0 19 0'%3E%3C/polygon%3E%3C/svg%3E") no-repeat;
     }
     &:hover {

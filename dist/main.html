@@ -238,7 +238,9 @@
           </div>
         </div>
         <div class="main2__detail">
-          <img class="main2__image js-main2-img" src="" />
+          <div class="main2__image">
+            <img class="js-main2-img zoom" src="" />
+          </div>
           <div class="main2__text">
             <div class="main2__text-inner js-main2-text"></div>
           </div>
@@ -248,7 +250,13 @@
     </div>
 
     <div class="main3">
-      <iframe class="main3__inner" width="560" height="315" src="https://www.youtube.com/embed/BJ60LXggVpE?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <a id="video-toggle" class="main3__inner" href="javascript://">
+        <img class="main3__icon" src="/img/main3_play.png" />
+        <span>Смотреть видео о компании</span>
+      </a>
+      <div id="video" class="main3__video">
+        <iframe class="main3__inner" width="560" height="315" src="https://www.youtube.com/embed/v1f7xGEvwk8?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
 
     <div class="articles container">
@@ -257,7 +265,7 @@
 
         <div class="articles__item">
           <a class="articles__item-image" href="">
-            <img src="/uploads/news1.jpg" />
+            <img class="zoom" src="/uploads/news1.jpg" />
           </a>
           <div class="articles__item-block">
             <div class="articles__item-meta">
@@ -281,7 +289,7 @@
 
         <div class="articles__item">
           <a class="articles__item-image" href="">
-            <img src="/uploads/news2.jpg" />
+            <img class="zoom" src="/uploads/news2.jpg" />
           </a>
           <div class="articles__item-block">
             <div class="articles__item-meta">
@@ -301,7 +309,7 @@
 
         <div class="articles__item">
           <a class="articles__item-image" href="">
-            <img src="/uploads/news3.jpg" />
+            <img class="zoom" src="/uploads/news3.jpg" />
           </a>
           <div class="articles__item-block">
             <div class="articles__item-meta">
@@ -321,7 +329,7 @@
 
         <div class="articles__item">
           <a class="articles__item-image" href="">
-            <img src="/uploads/news4.jpg" />
+            <img class="zoom" src="/uploads/news4.jpg" />
           </a>
           <div class="articles__item-block">
             <div class="articles__item-meta">

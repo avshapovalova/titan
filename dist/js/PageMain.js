@@ -2,6 +2,7 @@ const PageMain = {
   init: function() {
     this.animateNumbers()
     this.initBlockMain2()
+    this.initBlockMain3()
   },
 
   animateNumbers: function() {
@@ -30,5 +31,12 @@ const PageMain = {
 
     select($firstItem)
     $block.on('click', '.js-item', function(){ select($(this)) })
+  },
+
+  initBlockMain3: function() {
+    $('#video-toggle').click(function(){
+      $(this).hide();
+      $('#video').show();
+    })
   }
 }
